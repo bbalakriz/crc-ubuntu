@@ -12,3 +12,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
+
+
+# Go to https://remotedesktop.google.com/headless and follow the steps to enable remote access
+# Finally start using remote access from https://remotedesktop.google.com/access
