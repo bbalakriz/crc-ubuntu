@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install qemu-kvm libvirt-daemon libvirt-daemon-system dnsmasq
+sudo apt-get install --assume-yes qemu-kvm libvirt-daemon libvirt-daemon-system dnsmasq
 
 sudo usermod -a -G libvirt $(whoami)
 sudo usermod -a -G libvirt-qemu $(whoami)
