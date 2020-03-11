@@ -42,6 +42,7 @@ crc config set skip-check-network-manager-running true
 crc config set skip-check-crc-dnsmasq-file true
 
 crc setup
+# Download crc pull secret from https://cloud.redhat.com/openshift/install/crc/installer-provisioned and keep it in ~/.crc-pull-secret
 nohup crc start -m 20480 -p ~/.crc-pull-secret &
 
 
