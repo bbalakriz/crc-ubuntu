@@ -34,7 +34,7 @@ sudo systemctl restart dnsmasq
 dig foo.apps-crc.testing | echo $(grep 192.168.130.11)
 dig api.crc.testing | echo $(grep 192.168.130.11)
 
-curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz && tar -Jxvf crc-linux-amd64.tar.xz
+curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz && tar -Jxvf crc-linux-amd64.tar.xz && mkdir -p ~/bin && export PATH=$PATH:~/bin && mv crc-linux*/crc ~/bin/ && rm -rf crc*
 
 crc config set skip-check-network-manager-installed true
 crc config set skip-check-network-manager-config true
